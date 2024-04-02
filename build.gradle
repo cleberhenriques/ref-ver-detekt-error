@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    alias(libs.plugins.androidApplication) apply false
+    alias(libs.plugins.jetbrainsKotlinAndroid) apply false
+    alias(libs.plugins.androidLibrary) apply false
+    alias libs.plugins.detekt
+    alias libs.plugins.ktlint
+}
+
+subprojects {
+    ktlint {
+        version = "0.48.2"
+        debug = false
+        verbose = true
+        android = true
+        outputToConsole = true
+        outputColorName = "RED"
+        ignoreFailures = false
+        disabledRules = ["no-wildcard-imports", "max-line-length", "filename", "import-ordering"]
+        reporters {
+            reporter "plain"
+        }
+        filter {
+            exclude("**/generated/**")
+            include("**/kotlin/**")
+            include("**/java/**")
+        }
+    }
+
+    task detektProjectBaseline(type: io.gitlab.arturbosch.detekt.DetektCreateBaselineTask) {
+        description = "Overrides current baseline."
+        ignoreFailures.set(true)
+        parallel.set(true)
+        buildUponDefaultConfig.set(true)
+        setSource(files(rootDir))
+        baseline.set(file("$rootDir/config/detekt/baseline.xml"))
+        include("**/*.kt")
+        include("**/*.kts")
+        exclude("**/resources/**")
+        exclude("**/build/**")
+    }
+}
+
+allprojects {
+    apply from: "$rootDir/config/detekt/detekt.gradle"
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}

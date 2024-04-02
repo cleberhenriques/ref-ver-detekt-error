@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ComplexMethod:ComposeServiceAreaDetails.kt$ComposeServiceAreaDetails$operator fun invoke(serviceArea: List&lt;LatLng&gt;): ServiceAreaDetails</ID>
+    <ID>ComplexMethod:Extensions.kt$@DrawableRes fun Map.Maneuver.Action?.getDrawableResId(): Int?</ID>
+    <ID>ComplexMethod:Extensions.kt$@DrawableRes fun Type.getDrawableResId(): Int</ID>
+    <ID>ComplexMethod:MapRepository.kt$MapRepository$private fun updateNavigationState()</ID>
+    <ID>ComplexMethod:NavigationState.kt$private fun getTypeFrom(direction: Direction): Type</ID>
+    <ID>ComplexMethod:TripViewItem.kt$TripViewItem$override fun bind(viewHolder: GroupieViewHolder, position: Int)</ID>
+    <ID>ComplexMethod:ViewType.kt$ViewType$fun mapToTrackingEvent(isEarlyDropOff: Boolean = false)</ID>
+    <ID>EmptyFunctionBlock:PoolingNoScheduledHubReturnItem.kt$PoolingNoScheduledHubReturnItem${}</ID>
+    <ID>EmptyFunctionBlock:PoolingSeparatorItem.kt$PoolingSeparatorItem${}</ID>
+    <ID>EmptyFunctionBlock:RouteApiKoinTest.kt$FakeVehicleEventRepository${}</ID>
+    <ID>ForbiddenComment:AllCustomersViewModelTest.kt$AllCustomersViewModelTest$// TODO: Add test for the action type</ID>
+    <ID>ImplicitDefaultLocale:DistanceViewTests.kt$DistanceViewTests$String.format("%.1f km", 1.6)</ID>
+    <ID>ImplicitDefaultLocale:ManeuverViewTests.kt$ManeuverViewTests$String.format("%.1f km", 2.6)</ID>
+    <ID>ImplicitDefaultLocale:TestUtils.kt$RecyclerViewMatcher.&lt;no name provided&gt;$String.format( "%s (resource name not found)", Integer.valueOf(recyclerViewId) )</ID>
+    <ID>LargeClass:AuthRepositoryTest.kt$AuthRepositoryTest</ID>
+    <ID>LargeClass:MapRepositoryTest.kt$MapRepositoryTest</ID>
+    <ID>LongMethod:AllCustomersViewModelTest.kt$AllCustomersViewModelTest$@Test fun `initial state is in-progress`()</ID>
+    <ID>LongMethod:AllCustomersViewModelTest.kt$AllCustomersViewModelTest$@Test fun `when dropOff first customer visit is in completed state but stop action state is still in-progress`()</ID>
+    <ID>LongMethod:AllCustomersViewModelTest.kt$AllCustomersViewModelTest$@Test fun `when picked up both customers visits and stop action state are in completed state`()</ID>
+    <ID>LongMethod:AuthRepositoryTest.kt$AuthRepositoryTest$@Test fun `should log exception when Wifi setup fails`()</ID>
+    <ID>LongMethod:ComposeServiceAreaDetailsTest.kt$ComposeServiceAreaDetailsTest.Companion$@JvmStatic @Parameterized.Parameters(name = "{index}: ServiceArea {0} and Expected result {1}") fun data()</ID>
+    <ID>LongMethod:ConvertRouteToStopsTest.kt$ConvertRouteToStopsTest$private fun wayPoints(): List&lt;Waypoint&gt;</ID>
+    <ID>LongMethod:HomeViewModelTest.kt$HomeViewModelTest$@Test fun `should calculate the distance from stop when adding TripEvents`()</ID>
+    <ID>LongMethod:HomeViewModelTest.kt$HomeViewModelTest$@Test fun `should send two reallocation events when trip id changes`()</ID>
+    <ID>LongMethod:Internal.kt$Internal.TripEvent.Companion$fun toProto(event: TripEvent): VehicleEvent</ID>
+    <ID>LongMethod:LoadInitialStopProvisioningStateTest.kt$LoadInitialStopProvisioningStateTest$@Test fun `should set show child seats to false`()</ID>
+    <ID>LongMethod:LoadInitialStopProvisioningStateTest.kt$LoadInitialStopProvisioningStateTest$@Test fun `should set show child seats to true and value to 1`()</ID>
+    <ID>LongMethod:MapRepository.kt$MapRepository$private fun updateNavigationState()</ID>
+    <ID>LongMethod:MapRepositoryTest.kt$MapRepositoryTest$@Test fun `should retry routing on next state update after graph disconnected error`()</ID>
+    <ID>LongMethod:MapRepositoryTest.kt$MapRepositoryTest$@Test fun `tracer records new route for new waypoint`()</ID>
+    <ID>LongMethod:RouteApiTest.kt$RouteApiTest$@Test fun `when a trip event for a route already exists should remove that visit from the route`()</ID>
+    <ID>LongMethod:TripViewModelTest.kt$TripViewModelTest$@Test fun `when having passengers and turning off pooling with break should still show passengers`()</ID>
+    <ID>LongMethod:VisitsBuilder.kt$VisitsBuilder$private fun buildVisits(route: Route.Loaded, vehicleLocation: LatLng?): List&lt;Visit&gt;</ID>
+    <ID>LongParameterList:AggregateAndCompensateState.kt$AggregateAndCompensateState$( stopName: String, stopVote: StopVote, stopId: String, tripIds: List&lt;String&gt;, items: List&lt;StopActionViewItem.VisitViewItem&gt;, traceId: String )</ID>
+    <ID>LongParameterList:AuthRepository.kt$AuthRepository$( private val dao: AuthDao, private val apiFactory: ProvisionApiFactory, private val executor: ExecutorService, private val base64Wrapper: Base64Wrapper, private val vehicleWifiManager: VehicleWifiManager, private val tracker: Tracker, private val remoteConfigApi: RemoteConfigApi, private val imeiDataSource: ImeiDataSource, )</ID>
+    <ID>LongParameterList:DriverBreakHintViewModel.kt$DriverBreakHintViewModel$( private val locationRepository: VgaLocationRepository, private val breakInfo: TripState.Break.Info, private val locationUtils: LocationUtils, private val tracking: Tracking, private val poolingRepository: PoolingRepository, private val getVehicle: GetVehicle, private val authRepository: AuthRepository, private val addTripEvent: AddTripEvent, private val timeProvider: TimeProvider )</ID>
+    <ID>LongParameterList:FilterRouteShortBreaksKtTest.kt$( id: String = "visitid", customerName: String = "aCustomerName", customerId: String = "customerId", tripId: String = "aTripId", timeWindowEnd: Instant = Instant.now().plusMillis(1000 * 60 * 15), value: Route.Visit.Value = Route.Visit.Value.Break, loadChange: Int = 2, infants: Int = 0, boosterSeats: Int = 0, childrenPassengers: Int = 0, adultPassengers: Int = 0, )</ID>
+    <ID>LongParameterList:PoolingMenuViewModel.kt$PoolingMenuViewModel$( private val authRepository: AuthRepository, private val poolingRepository: PoolingRepository, iotRepository: IotRepository, private val tracking: Tracking, private val getVehicle: GetVehicle, getVehicleObservable: GetVehicleObservable, private val routeApi: RouteApi, private val shortBreakApi: ShortBreakApi, )</ID>
+    <ID>LongParameterList:RealSendLocation.kt$RealSendLocation$( private val iotClient: IotClient, private val vehicleIdProvider: VehicleIdProvider, private val serviceAreaNameProvider: ServiceAreaNameProvider, private val remoteConfigApi: RemoteConfigApi, private val timeProvider: TimeProvider, private val idGenerator: IdGenerator, private val gson: Gson )</ID>
+    <ID>LongParameterList:RealSyncShortBreakEvents.kt$RealSyncShortBreakEvents$( private val shortBreakStartEventDao: ShortBreakStartEventDao, private val shortBreakEndEventDao: ShortBreakEndEventDao, private val shortBreakCancelEventDao: ShortBreakCancelEventDao, private val shortBreakStartNavigationEventDao: ShortBreakStartNavigationEventDao, private val shortBreakWaitingScreenEventDao: ShortBreakWaitingScreenEventDao, private val syncEvents: SyncEvents, private val vehicleIdProvider: VehicleIdProvider, private val serviceAreaNameProvider: ServiceAreaNameProvider, coroutineProvider: CoroutineProvider, )</ID>
+    <ID>LongParameterList:RouteRepository.kt$RouteRepository$( private val routeDataStore: DataStore&lt;VehicleRoute&gt;, private val updateCustomersInShadow: UpdateCustomersInShadow, private val getCustomerNames: GetCustomerNames, private val customerRepository: CustomerRepository, private val tripEventsRepository: TripEventsRepository, private val vehicleEventRepository: VehicleEventRepository, private val generateTraceId: () -&gt; String )</ID>
+    <ID>LongParameterList:RouteRepositoryTest.kt$RouteRepositoryTest$( id: String = "visitId", timeWindowBegin: pbandk.wkt.Timestamp? = null, timeWindowEnd: pbandk.wkt.Timestamp? = null, loadChange: Load? = Load(adults = 1), visitType: Visit.VisitType? = Visit.VisitType.HubReturn(Visit.HubReturn()), stopDuration: pbandk.wkt.Duration? = null, referenceId: String = "referenceId", customerInfo: CustomerInfo? = CustomerInfo( customerId = "customerId" ), passengers: PassengerInfo? = PassengerInfo(adults = 1), unknownFields: Map&lt;Int, pbandk.UnknownField&gt; = emptyMap() )</ID>
+    <ID>LongParameterList:SubscriptionRepository.kt$SubscriptionRepository$( private val iotClient: IotClient, private val gson: Gson, private val serviceAreaRepository: ServiceAreaRepository, private val processDelta: ProcessDelta, private val customerDao: CustomerDao, private val tracker: Tracker, private val fleetVehicleIdLocalDataSource: FleetVehicleIdLocalDataSource, coroutineProvider: CoroutineProvider, )</ID>
+    <ID>LongParameterList:TestBuilder.kt$TestBuilder$( id: String = "id", customerName: String? = "name", customerId: String? = "custId", tripId: String = "tripId", timeWindowEnd: Instant = Instant.now(), value: Route.Visit.Value = Route.Visit.Value.HubReturn, loadChange: Int = 0, infants: Int = 0, boosterSeats: Int = 0, childrenPassengers: Int = 0, adultPassengers: Int = 0, )</ID>
+    <ID>LongParameterList:TestBuilder.kt$TestBuilder$( id: String = "id${Random.nextInt()}", type: StopActionType = StopActionType.PickUp, passengerName: String = "passengerName${Random.nextInt()}", totalPassengers: Int = 1, estimatedPickupTime: Instant? = Instant.now(), expanded: Boolean = false, visit: Visit = aVisit(), noShow: Boolean = false, completedTimeStamp: Instant? = null, completed: Boolean = false, childWithoutSeatsAmount: Int = 0, childSeatsAmount: Int = 0, boosterSeatsAmount: Int = 0, )</ID>
+    <ID>LongParameterList:TestBuilder.kt$TestBuilder$( tripId: String = "trip-id-test", customerName: String? = "Daniel", customerId: String? = "daniel-customer-id", extraPassengers: Int = 1, childrenPassengers: Int = 55, childSeatsCount: Int = 55, boosterSeatsCount: Int = 0, traceId: String? = "trace-id", distance: Double? = 32.32, eta: Duration? = null, stop: Route.Stop = Route.Stop("route-stop-od", LatLng(23.11, 44.55), "stopName", 23.3), isNearby: Boolean = true, type: Visit.Type = Visit.Type.Pickup( canNoShow = true, isEnabled = true ), estimatedPickupTime: Instant? = Instant.now() )</ID>
+    <ID>LongParameterList:TestBuilder.kt$TestBuilder$( type: StopActionStateType = StopActionStateType.InProgress, stopName: String = "stopName${Random.nextInt()}", stopId: String = "stopId${Random.nextInt()}", tripIds: List&lt;String&gt; = emptyList(), stopActions: List&lt;StopActionViewItem&gt; = emptyList(), stopVote: StopVote = StopVote.Initial, traceId: String = "traceId${Random.nextInt()}" )</ID>
+    <ID>LongParameterList:TripGoToHubViewModel.kt$TripGoToHubViewModel$( private val locationRepository: VgaLocationRepository, private val authRepository: AuthRepository, private val locationUtils: LocationUtils, private val poolingRepository: PoolingRepository, private val timeProvider: TimeProvider, private val addTripEvent: AddTripEvent, private val tripInfo: GoToHub.TripInfo, private val tracking: io.moia.vga.analytics.Tracking, private val getVehicle: GetVehicle )</ID>
+    <ID>LongParameterList:TripPassengersViewModel.kt$TripPassengersViewModel$( private val locationRepository: VgaLocationRepository, private val authRepository: AuthRepository, private val regularUpdateProvider: RegularUpdateProvider, private val convertRouteToStops: ConvertRouteToStops, private val timeProvider: TimeProvider, private val tracking: Tracking, private val routeApi: RouteApi )</ID>
+    <ID>LongParameterList:TripViewModel.kt$TripViewModel$( private val authRepository: AuthRepository, private val locationRepository: VgaLocationRepository, private val timeProvider: TimeProvider, private val visitsBuilder: VisitsBuilder, getVehicleObservable: GetVehicleObservable, private val getVehicle: GetVehicle, private val routeApi: RouteApi, private val shortBreakApi: ShortBreakApi )</ID>
+    <ID>LongParameterList:VehicleConnectivityHandler.kt$VehicleConnectivityHandler$( context: Context, private val mainThreadHandler: Handler, private val locationRepository: VgaLocationRepository, private val authRepository: AuthRepository, private val vehicleWifiManager: VehicleWifiManager, private val remoteConfigApi: RemoteConfigApi, private val tracking: Tracking, enqueuePeriodicWifiConnectionTryouts: (appContext: Context) -&gt; Unit, )</ID>
+    <ID>MagicNumber:ComposeServiceAreaDetails.kt$ComposeServiceAreaDetails$3</ID>
+    <ID>MagicNumber:CustomerNameView.kt$CustomerNameView$12</ID>
+    <ID>MagicNumber:Extensions.kt$135</ID>
+    <ID>MagicNumber:Extensions.kt$175</ID>
+    <ID>MagicNumber:Extensions.kt$180</ID>
+    <ID>MagicNumber:Extensions.kt$185</ID>
+    <ID>MagicNumber:Extensions.kt$225</ID>
+    <ID>MagicNumber:Extensions.kt$315</ID>
+    <ID>MagicNumber:Extensions.kt$45</ID>
+    <ID>MagicNumber:HereUtils.kt$1_000_000</ID>
+    <ID>MagicNumber:Internal.kt$3</ID>
+    <ID>MagicNumber:Internal.kt$4</ID>
+    <ID>MagicNumber:Internal.kt$5</ID>
+    <ID>MagicNumber:Internal.kt$6</ID>
+    <ID>MagicNumber:MapRepository.kt$90.0</ID>
+    <ID>MagicNumber:MapRepository.kt$MapObjectManager$10</ID>
+    <ID>MagicNumber:MapRepository.kt$MapRepository$100</ID>
+    <ID>MagicNumber:MapRepository.kt$MapRepository$500f</ID>
+    <ID>MagicNumber:MessagesButtonView.kt$MessagesButtonView$1.2f</ID>
+    <ID>MagicNumber:NavigationEventRepository.kt$NavigationEventRepository$30</ID>
+    <ID>MagicNumber:RemoteConfigModule.kt$3600</ID>
+    <ID>MagicNumber:SoundMachine.kt$SoundMachine$0.1f</ID>
+    <ID>MagicNumber:StringUtils.kt$60</ID>
+    <ID>MagicNumber:VehicleMarker.kt$VehicleMarker$12</ID>
+    <ID>MagicNumber:VehicleMarker.kt$VehicleMarker$3</ID>
+    <ID>MagicNumber:VehicleMarker.kt$VehicleMarker$3.5f</ID>
+    <ID>MagicNumber:VehicleMarker.kt$VehicleMarker$6</ID>
+    <ID>MagicNumber:VehicleMarker.kt$VehicleMarker$8</ID>
+    <ID>MagicNumber:VehicleWifiManager.kt$VehicleWifiManager$12</ID>
+    <ID>MagicNumber:VgaApp.kt$VgaApp$10</ID>
+    <ID>MagicNumber:VgaApp.kt$VgaApp$20</ID>
+    <ID>MagicNumber:VgaMapView.kt$VgaMapView$0.5f</ID>
+    <ID>MagicNumber:VgaMapView.kt$VgaMapView$0.7f</ID>
+    <ID>MagicNumber:VgaMapView.kt$VgaMapView$4</ID>
+    <ID>MagicNumber:VgaService.kt$VgaService$100</ID>
+    <ID>MatchingDeclarationName:FleetVehicleIdProviderTest.kt$RealFleetVehicleIdProviderTest</ID>
+    <ID>MatchingDeclarationName:TestMapApiModule.kt$MapApiKoinTest : KoinTest</ID>
+    <ID>MatchingDeclarationName:TestUtils.kt$InstantExecutor : AbstractExecutorService</ID>
+    <ID>MaxLineLength:AuthDaoTest.kt$AuthDaoTest$val certificate = Certificate("vehicleId", "certificatePem", "pubKey", "privKey", "iotEndpoint", Auth.ServiceArea.HAMBURG, Auth.Environment.DEV)</ID>
+    <ID>MaxLineLength:AuthDaoTest.kt$AuthDaoTest$val firstCertificate = Certificate("vehicleId", "cefPem", "pubKey", "privKey", "iotEndpoint", Auth.ServiceArea.HAMBURG, Auth.Environment.DEV)</ID>
+    <ID>MaxLineLength:AuthDaoTest.kt$AuthDaoTest$val firstCertificate = Certificate("vehicleId", "certificatePem", "pubKey", "privKey", "iotEndpoint", Auth.ServiceArea.HAMBURG, Auth.Environment.DEV)</ID>
+    <ID>MaxLineLength:AuthDaoTest.kt$AuthDaoTest$val firstCertificateModified = Certificate("vehicleId", "certificatePem1", "pubKey1", "privKey1", "iotEndpoint1", Auth.ServiceArea.HAMBURG, Auth.Environment.DEV)</ID>
+    <ID>MaxLineLength:AuthDaoTest.kt$AuthDaoTest$val secondCertificate = Certificate("vehicleId1", "certificatePem1", "pubKey1", "privKey1", "iotEndpoint1", Auth.ServiceArea.HAMBURG, Auth.Environment.DEV)</ID>
+    <ID>MaxLineLength:ClientTest.kt$ClientTest$"AWS4-HMAC-SHA256 Credential=accessKeyId/20201026/eu-central-1/execute-api/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-security-token, Signature=a6e4c1e3eb6f67e8ccaa0aa755bf14ecd9e004e33db0b109934ac1e5686c7636"</ID>
+    <ID>MaxLineLength:ComposeServiceAreaDetails.kt$ComposeServiceAreaDetails$// based on that minLatIndex is always lower than the maxLatIndex, we can identify the first rect if it will be anti-clockwise or not</ID>
+    <ID>MaxLineLength:ContextExt.kt$fun Context.hasPermission(permission: String)</ID>
+    <ID>MaxLineLength:EventConfigTest.kt$EventConfigTest$assertThat(routingParameterEventConfig.topic).isEqualTo("\$aws/rules/experiments/routing/$serviceAreaId/$vehicleId")</ID>
+    <ID>MaxLineLength:Internal.kt$Internal.Visit.Companion$is VisitType.Pickup -&gt; (visit.visitType as VisitType.Pickup).pickup.offeredPickupTime?.toInstant()</ID>
+    <ID>MaxLineLength:LocationForwardingTest.kt$LocationForwardingTest$assertThat(deviation).isEqualTo(expectedDeviationInSeconds?.let { Deviation(deltaTimeS = expectedDeviationInSeconds) } ?: Deviation())</ID>
+    <ID>MaxLineLength:ManeuverViewModelTest.kt$ManeuverViewModelTest$fun</ID>
+    <ID>MaxLineLength:MenuModule.kt$single(named("user-preferences")) { androidContext().getSharedPreferences("moia-vga-user-preferences", Context.MODE_PRIVATE) }</ID>
+    <ID>MaxLineLength:MoiaLocationDataSource.kt$MoiaLocationDataSource$// If the bearing of the new location is not available we take the previous one to avoid turning of the vehicle indicator.</ID>
+    <ID>MaxLineLength:PoolingSnackBar.kt$PoolingSnackBar$private constructor(parent: ViewGroup, content: View, callback: ContentViewCallback)</ID>
+    <ID>MaxLineLength:SafeLocalImeiDataSourceTest.kt$SafeLocalImeiDataSourceTest$fun</ID>
+    <ID>MaxLineLength:StopActionAdapter.kt$StopActionAdapter$true -&gt; if (item.noShow) ViewType.STOP_ACTION_NO_SHOW_UNDO else ViewType.STOP_ACTION_PICK_UP_UNDO</ID>
+    <ID>MaxLineLength:StoreShortBreakNavigationStartedTest.kt$StoreShortBreakNavigationStartedTest$assertThat(exception.message).isEqualTo("Trying to store ShortBreakNavigationStartedEvent without a vehicleId")</ID>
+    <ID>MaxLineLength:StoreShortBreakWaitingScreenShownEventTest.kt$StoreShortBreakWaitingScreenShownEventTest$assertThat(exception.message).isEqualTo("Trying to store ShortBreakWaitingScreenShownEvent without a vehicleId")</ID>
+    <ID>MaxLineLength:TripGoToHubViewModelTest.kt$TripGoToHubViewModelTest$fun</ID>
+    <ID>MaxLineLength:TripReallocationViewModelTest.kt$TripReallocationViewModelTest$fun</ID>
+    <ID>MaxLineLength:TripViewItem.kt$TripViewItem$setBackgroundResource(if (isShowingBoth) R.drawable.pill_shape_dropoff_mixed else R.drawable.pill_shape_dropoff)</ID>
+    <ID>MaxLineLength:TripViewItem.kt$TripViewItem$setBackgroundResource(if (isShowingBoth) R.drawable.pill_shape_pickup_mixed else R.drawable.pill_shape_pickup)</ID>
+    <ID>MaxLineLength:UserSettingsTest.kt$UserSettingsTest$userSettingsState.postValue(UserSettingsState(automaticEnabled = false, darkModeSettingSwitchEnabled = true, darkModeEnabled = false))</ID>
+    <ID>MaxLineLength:UserSettingsTest.kt$UserSettingsTest$userSettingsState.postValue(UserSettingsState(automaticEnabled = false, darkModeSettingSwitchEnabled = true, darkModeEnabled = true))</ID>
+    <ID>MaxLineLength:UserSettingsTest.kt$UserSettingsTest$userSettingsState.postValue(UserSettingsState(automaticEnabled = true, darkModeSettingSwitchEnabled = false, darkModeEnabled = false))</ID>
+    <ID>MaxLineLength:UserSettingsViewModel.kt$UserSettingsViewModel$DarkModeSetting.AUTOMATIC -&gt; UserSettingsState(automaticEnabled = true, darkModeSettingSwitchEnabled = false, darkModeEnabled = false)</ID>
+    <ID>MaxLineLength:UserSettingsViewModel.kt$UserSettingsViewModel$DarkModeSetting.DAY -&gt; UserSettingsState(automaticEnabled = false, darkModeSettingSwitchEnabled = true, darkModeEnabled = false)</ID>
+    <ID>MaxLineLength:UserSettingsViewModel.kt$UserSettingsViewModel$DarkModeSetting.NIGHT -&gt; UserSettingsState(automaticEnabled = false, darkModeSettingSwitchEnabled = true, darkModeEnabled = true)</ID>
+    <ID>MaxLineLength:VehicleEventDao.kt$VehicleEventDao$@Query("UPDATE arrived_at_waypoint_events SET sentStatus = :sentStatus WHERE traceId = :traceId AND stopId = :stopId")</ID>
+    <ID>MemberNameEqualsClassName:Messaging.kt$Messaging.Message$abstract val message: String</ID>
+    <ID>NestedBlockDepth:StopActionAdapter.kt$StopActionAdapter$private fun getItemViewTypeEnum(position: Int): ViewType</ID>
+    <ID>PackageNaming:AggregateAndCompensateState.kt$package io.moia.vga.home.stopAction.usecases</ID>
+    <ID>PackageNaming:AllCustomersFragment.kt$package io.moia.vga.home.stopAction.allCustomers</ID>
+    <ID>PackageNaming:AllCustomersModule.kt$package io.moia.vga.home.stopAction.allCustomers</ID>
+    <ID>PackageNaming:AllCustomersViewModel.kt$package io.moia.vga.home.stopAction.allCustomers</ID>
+    <ID>PackageNaming:IotShortBreakRepository.kt$package io.moia.vga.iot.api.shortBreak</ID>
+    <ID>PackageNaming:LoadInitialStopState.kt$package io.moia.vga.home.stopAction.usecases</ID>
+    <ID>PackageNaming:RealServiceAreaRepository.kt$package io.moia.vga.iot.serviceArea</ID>
+    <ID>PackageNaming:RealVehicleEventRepository.kt$package io.moia.vga.iot.vehicleEvents</ID>
+    <ID>PackageNaming:SendInfoScreenEvent.kt$package io.moia.vga.iot.info_screen</ID>
+    <ID>PackageNaming:SendStopVote.kt$package io.moia.vga.home.stopAction</ID>
+    <ID>PackageNaming:SendTestRoute.kt$package io.moia.vga.menu.debug.testMissionInjection</ID>
+    <ID>PackageNaming:SendTripEvent.kt$package io.moia.vga.home.stopAction.usecases</ID>
+    <ID>PackageNaming:ServiceAreaDao.kt$package io.moia.vga.iot.serviceArea</ID>
+    <ID>PackageNaming:ServiceAreaRepository.kt$package io.moia.vga.iot.api.serviceArea</ID>
+    <ID>PackageNaming:ShortBreakApi.kt$package io.moia.vga.shortBreakApi.shortBreakApi</ID>
+    <ID>PackageNaming:ShortBreakDurationDialogState.kt$package
+        io.moia.vga.shortBreakApi.data</ID>
+    <ID>PackageNaming:ShortBreakRequest.kt$package io.moia.vga.shortBreakApi.data</ID>
+    <ID>PackageNaming:StopActionAdapter.kt$package io.moia.vga.home.stopAction</ID>
+    <ID>PackageNaming:StopActionFragment.kt$package io.moia.vga.home.stopAction</ID>
+    <ID>PackageNaming:StopActionModule.kt$package io.moia.vga.home.stopAction</ID>
+    <ID>PackageNaming:StopActionState.kt$package io.moia.vga.home.stopAction</ID>
+    <ID>PackageNaming:StopActionViewModel.kt$package io.moia.vga.home.stopAction</ID>
+    <ID>PackageNaming:StopVote.kt$package io.moia.vga.iot.api.stopVoting</ID>
+    <ID>PackageNaming:StopVoteReasonDialogFragment.kt$package io.moia.vga.home.stopAction.voting</ID>
+    <ID>PackageNaming:StopVotingRepository.kt$package io.moia.vga.iot.api.stopVoting</ID>
+    <ID>PackageNaming:SubmitTripEvents.kt$package io.moia.vga.home.stopAction.usecases</ID>
+    <ID>PackageNaming:TestRoute.kt$package io.moia.vga.menu.debug.testMissionInjection</ID>
+    <ID>PackageNaming:UpdatePickUpAndDropOffData.kt$package io.moia.vga.home.stopAction.usecases</ID>
+    <ID>PackageNaming:VehicleEventDao.kt$package io.moia.vga.iot.vehicleEvents</ID>
+    <ID>PackageNaming:ViewType.kt$package io.moia.vga.home.stopAction</ID>
+    <ID>ReturnCount:Client.kt$Client$internal fun sendPayload(payload: ByteArray): Result</ID>
+    <ID>ReturnCount:ComposeServiceAreaDetails.kt$ComposeServiceAreaDetails$operator fun invoke(serviceArea: List&lt;LatLng&gt;): ServiceAreaDetails</ID>
+    <ID>ReturnCount:DriverBreakHintViewModel.kt$DriverBreakHintViewModel$fun arrivedAtBreakLocation()</ID>
+    <ID>ReturnCount:Extensions.kt$// This is the same implementation of the snack toolbar findSuitableParent method fun View?.findSuitableParent(): ViewGroup?</ID>
+    <ID>ReturnCount:GetShortBreakDialogState.kt$GetShortBreakDialogState$private fun getShortBreakDurationDialogState( shortBreakRequest: ShortBreakRequest ): ShortBreakDurationDialogState</ID>
+    <ID>ReturnCount:HomeViewModel.kt$HomeViewModel$private fun onArrivedAtWaypoint(visit: Visit, allVisits: List&lt;Visit&gt;)</ID>
+    <ID>ReturnCount:LoadInitialStopState.kt$LoadInitialStopState$@Suppress("ComplexMethod") private fun getStateForStop( state: LiveData&lt;StopActionState?&gt;, visits: List&lt;Visit&gt; ): StopActionState</ID>
+    <ID>ReturnCount:MapRepository.kt$MapRepository$private fun updateNavigationState()</ID>
+    <ID>ReturnCount:ProvisioningFragment.kt$ProvisioningFragment$private fun onProvisionClick()</ID>
+    <ID>ReturnCount:TripGoToHubViewModel.kt$TripGoToHubViewModel$private fun reportHubArrival()</ID>
+    <ID>SerialVersionUIDInSerializableClass:LatLng.kt$LatLng : Serializable</ID>
+    <ID>SerialVersionUIDInSerializableClass:TripState.kt$TripState.Break$Info : Serializable</ID>
+    <ID>SerialVersionUIDInSerializableClass:TripState.kt$TripState.GoToHub$TripInfo : Serializable</ID>
+    <ID>SerialVersionUIDInSerializableClass:TripState.kt$TripState.Reallocate$TripInfo : Serializable</ID>
+    <ID>SerialVersionUIDInSerializableClass:TripState.kt$TripState.ShortBreak$Info : Serializable</ID>
+    <ID>SerialVersionUIDInSerializableClass:Visit.kt$Visit : Serializable</ID>
+    <ID>SpreadOperator:AuthDao.kt$AuthDao$(*toUpdate.toTypedArray())</ID>
+    <ID>SwallowedException:AuthRepository.kt$AuthRepository$catch (e: IOException) { operation.postValue(Operation.Failure(Auth.ProvisionError.Generic)) return }</ID>
+    <ID>SwallowedException:CredentialsRefreshWorker.kt$CredentialsRefreshWorker$catch (unknown: UnknownHostException) { return Result.retry() }</ID>
+    <ID>SwallowedException:IotClientDeviceSdkV2.kt$IotClientDeviceSdkV2$catch (e: Exception) { logError( "disconnect - Error while disconnecting AWSIotMqttManager", type = LogType.IOT_CLIENT ) false }</ID>
+    <ID>SwallowedException:RealStoreShortBreakRequestRejected.kt$RealStoreShortBreakRequestRejected$catch (e: IllegalArgumentException) { ShortBreakRequest.RejectionReason.REASON_INVALID }</ID>
+    <ID>SwallowedException:SendLogsWorker.kt$SendLogsWorker$catch (unknown: UnknownHostException) { return Result.retry() }</ID>
+    <ID>SwallowedException:TestUtils.kt$RecyclerViewMatcher.&lt;no name provided&gt;$catch (var4: Resources.NotFoundException) { String.format( "%s (resource name not found)", Integer.valueOf(recyclerViewId) ) }</ID>
+    <ID>SwallowedException:ViewBindingDelegate.kt$ViewBindingDelegate$catch (e: NoSuchMethodException) { // &lt;merge&gt; tags don't have the boolean parameter. val inflateMethod = bindingClass.getMethod("inflate", LayoutInflater::class.java, ViewGroup::class.java) inflateMethod.invoke(null, LayoutInflater.from(view.context), view) as T }</ID>
+    <ID>TooGenericExceptionThrown:TestUtils.kt$throw RuntimeException("Condition not met after $timeout ms.")</ID>
+    <ID>TooManyFunctions:MapRepository.kt$MapRepository</ID>
+    <ID>TooManyFunctions:PoolingMenuFragment.kt$PoolingMenuFragment : Fragment</ID>
+    <ID>TooManyFunctions:StopActionViewModel.kt$StopActionViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:VehicleEventDao.kt$VehicleEventDao</ID>
+    <ID>TooManyFunctions:VgaMapView.kt$VgaMapView : FrameLayoutObserverViewKoinComponent</ID>
+    <ID>TopLevelPropertyNaming:ComposeServiceAreaDetails.kt$private const val RectSize = 5</ID>
+    <ID>TopLevelPropertyNaming:ComposeServiceAreaDetails.kt$private const val maximumLat = 90.0</ID>
+    <ID>TopLevelPropertyNaming:ComposeServiceAreaDetails.kt$private const val maximumLng = 180.0</ID>
+    <ID>TopLevelPropertyNaming:ComposeServiceAreaDetails.kt$private const val minimumLat = -90.0</ID>
+    <ID>TopLevelPropertyNaming:ComposeServiceAreaDetails.kt$private const val minimumLng = -180.0</ID>
+    <ID>UnnecessaryAbstractClass:CustomerDao.kt$CustomerDao</ID>
+    <ID>UnnecessaryAbstractClass:MainActivityTest.kt$MainActivityTest</ID>
+    <ID>UnnecessaryAbstractClass:Messaging.kt$Messaging$Message</ID>
+    <ID>UnusedPrivateMember:AggregateAndCompensateState.kt$private const val DIVIDER_COMPLETED_PICKUPS_DROP_OFFS = "divider_completed_pickups_drop_offs"</ID>
+    <ID>UnusedPrivateMember:AggregateAndCompensateState.kt$private const val DIVIDER_PICKUPS_DROP_OFFS = "divider_pickups_drop_offs"</ID>
+    <ID>UnusedPrivateMember:HomeViewModelTest.kt$HomeViewModelTest$private val sensorsRepository: SensorsRepository = mock()</ID>
+    <ID>UnusedPrivateMember:RealVehicleEventRepositoryTest.kt$RealVehicleEventRepositoryTest$private val idGenerator: IdGenerator = mock()</ID>
+    <ID>UnusedPrivateMember:RealVehicleEventRepositoryTest.kt$RealVehicleEventRepositoryTest$private val timeProvider: TimeProvider = mock()</ID>
+    <ID>UnusedPrivateMember:StopVotingRepositoryTest.kt$StopVotingRepositoryTest$private val idGenerator: IdGenerator = mock()</ID>
+    <ID>VarCouldBeVal:Matchers.kt$&lt;no name provided&gt;$private var expectedText = text</ID>
+    <ID>WildcardImport:AuthDao.kt$import androidx.room.*</ID>
+    <ID>WildcardImport:CustomerDao.kt$import androidx.room.*</ID>
+    <ID>WildcardImport:Extensions.kt$import io.moia.map.Lane.Type.*</ID>
+    <ID>WildcardImport:HereUtils.kt$import com.here.android.mpa.routing.Maneuver.Action.*</ID>
+    <ID>WildcardImport:MessagesDao.kt$import androidx.room.*</ID>
+    <ID>WildcardImport:MessagesState.kt$import io.moia.vga.message.database.Messaging.*</ID>
+    <ID>WildcardImport:MessagingRepository.kt$import io.moia.vga.message.database.Messaging.*</ID>
+    <ID>WildcardImport:NavigationState.kt$import com.here.android.mpa.guidance.LaneInformation.Direction.*</ID>
+    <ID>WildcardImport:NavigationState.kt$import com.here.android.mpa.guidance.LaneInformation.RecommendationState.*</ID>
+    <ID>WildcardImport:NavigationState.kt$import io.moia.map.Lane.Recommendation.*</ID>
+    <ID>WildcardImport:StopActionModule.kt$import io.moia.vga.home.stopAction.usecases.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
